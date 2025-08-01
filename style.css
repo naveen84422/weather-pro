@@ -1,0 +1,113 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('p_75695212-d5e7-11ee-bed4-00163e012526_wm.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: powderblue;
+}
+
+.weather-card {
+    background-color: rgba(88, 215, 215, 0.85);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+    text-align: center;
+    color: blue;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#city-input, #city-input2 {
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#city-input-btn, #city-input-btn2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-input-btn:hover, #city-input-btn2:hover {
+    background-color: #1565C0;
+}
+
+#weather-info, #forecast-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed, #date, #date2 {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.forecast-day {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    text-align: center;
+    flex: 0 0 auto;
+}
